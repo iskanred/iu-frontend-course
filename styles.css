@@ -1,0 +1,98 @@
+.left {
+    float: left;
+}
+
+body {
+    background-color: #F2F2F2;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Futura", serif;
+    color: #403D3C;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:link, a:visited {
+    color: blue;
+}
+
+a:hover {
+    color: #e88989;
+}
+
+/* ======= HEADER ======= */
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 2%;
+}
+
+header h1 {
+    font-size: 380%
+}
+
+#header-photo-div {
+    margin-left: 2%;
+}
+
+#main-photo {
+    border: 5px solid;
+    border-radius: 100%;
+}
+
+#header-info-div {
+    margin-right: 2%;
+}
+
+#profession {
+    font-size: 140%;
+}
+
+#under-name-div {
+    display: grid;
+    grid-template-columns: 80% 10%;
+}
+
+#contacts-div {
+    float: right;
+}
+
+.contact {
+    font-size: 20px;
+    ;
+}
+
+/* ====================== */
+
+/* ======= MAIN ======= */
+main {
+    display: grid;
+    grid-template-columns: 50% 50%;
+    border: 5px solid;
+    border-radius: 1px;
+    padding-left: 5%;
+    padding-right: 5%;
+    margin-bottom: 12px;
+}
+
+section {
+    margin-top: 10%;
+}
+
+section h1 {
+    font-size: 24px;
+}
+
+.section-main-content h1 {
+    font-size: 18px;
+}
+
+.caption {
+    font-style: italic;
+}
+
+/* ======= MAIN ======= */
+
