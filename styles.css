@@ -15,11 +15,11 @@ a {
 }
 
 a:link, a:visited {
-    color: blue;
+    color: mediumblue;
 }
 
 a:hover {
-    color: #e88989;
+    color: coral;
 }
 
 /* ======= HEADER ======= */
@@ -62,7 +62,6 @@ header h1 {
 
 .contact {
     font-size: 20px;
-    ;
 }
 
 /* ====================== */
