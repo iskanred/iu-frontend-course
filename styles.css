@@ -8,6 +8,8 @@ body {
     margin-right: 10%;
     font-family: "Futura", serif;
     color: #403D3C;
+    display: flex;
+    flex-direction: column;
 }
 
 a {
@@ -66,7 +68,8 @@ header h1 {
 
 /* ====================== */
 
-/* ======= MAIN ======= */
+
+/* ======= MAIN ========= */
 main {
     display: grid;
     grid-template-columns: 50% 50%;
@@ -74,7 +77,7 @@ main {
     border-radius: 1px;
     padding-left: 5%;
     padding-right: 5%;
-    margin-bottom: 12px;
+    margin-bottom: 30px;
 }
 
 section {
@@ -93,5 +96,32 @@ section h1 {
     font-style: italic;
 }
 
-/* ======= MAIN ======= */
+/* ====================== */
 
+/* ====== FOOTER ======== */
+
+footer {
+    margin: auto;
+    justify-content: space-evenly;
+}
+
+footer figure {
+    display: flex;
+    flex-direction: column;
+}
+
+#comic-title {
+    text-align: center;
+}
+
+#comic-image {
+
+}
+
+figcaption {
+    margin-top: 1%;
+    color: grey;
+    display: none;
+}
+
+/* ====================== */
