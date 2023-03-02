@@ -1,3 +1,4 @@
+"use strict"
 export { }; // make file a module to use top-level await
 
 console.log("Script execution is started");
