@@ -61,8 +61,10 @@ interface XkcdComic {
     month: number,
     year: number,
     day: number,
+    alt: string,
     img: string,
     title: string,
+
 }
 
 function buildUrl(baseUrl: string, params: URLSearchParams): string {
@@ -105,13 +107,15 @@ async function addComic() {
 
     try {
         const comic: XkcdComic = await fetchXkcdComic();
-        const date = new Date(Date.UTC(comic.year, comic.month, comic.day)).toLocaleDateString();
+        const date = new Date(comic.year, comic.month - 1, comic.day).toLocaleDateString();
         const title = comic.title;
         const imgSrc = comic.img;
+        const alt = comic.alt;
 
+        captionHtml.innerText = `Upload date: ${date}`;
         titleHtml.innerText = title;
         imgHtml.src = imgSrc;
-        captionHtml.innerText = `Upload date: ${date}`;
+        imgHtml.alt = alt;
 
         captionHtml.style.display = 'initial';
     } catch (e) { }
