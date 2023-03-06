@@ -100,7 +100,7 @@ async function fetchXkcdComic(): Promise<XkcdComic> {
 }
 
 function extractDate(comic: XkcdComic): Date {
-    return new Date(parseInt(comic.year), parseInt(comic.month) - 1, parseInt(comic.day));
+    return executeWithError(() => new Date(parseInt(comic.year), parseInt(comic.month) - 1, parseInt(comic.day)));
 }
 
 async function addComic() {
