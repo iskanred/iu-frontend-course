@@ -58,9 +58,9 @@ await fillProjectsDescriptions();
 /* ==== Homework 2 ==== */
 
 interface XkcdComic {
-    month: number,
-    year: number,
-    day: number,
+    month: string,
+    year: string,
+    day: string,
     alt: string,
     img: string,
     title: string,
@@ -99,6 +99,10 @@ async function fetchXkcdComic(): Promise<XkcdComic> {
     return comicJson;
 }
 
+function extractDate(comic: XkcdComic): Date {
+    return new Date(parseInt(comic.year), parseInt(comic.month) - 1, parseInt(comic.day));
+}
+
 async function addComic() {
     const titleHtml = document.getElementById('comic-title') as HTMLHeadingElement;
     const imgHtml = document.getElementById('comic-image') as HTMLImageElement;
@@ -107,7 +111,7 @@ async function addComic() {
 
     try {
         const comic: XkcdComic = await fetchXkcdComic();
-        const date = new Date(comic.year, comic.month - 1, comic.day).toLocaleDateString();
+        const date = extractDate(comic).toLocaleDateString();
         const title = comic.title;
         const imgSrc = comic.img;
         const alt = comic.alt;
