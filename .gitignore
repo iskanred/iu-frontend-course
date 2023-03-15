@@ -263,4 +263,7 @@ $RECYCLE.BIN/
 # Windows shortcuts
 *.lnk
 
+node_modules/
+dist/
+
 # End of https://www.toptal.com/developers/gitignore/api/webstorm,macos,windows,linux,jetbrains

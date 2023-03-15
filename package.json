@@ -1,12 +1,13 @@
 {
   "name": "iu-frontend-course",
-  "version": "0.4.0",
+  "version": "0.0.0",
   "description": "IU Frontend Web Development Course",
-  "main": "script.js",
   "type": "module",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup --config rollup.config.js"
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview",
+    "check": "svelte-check --tsconfig ./tsconfig.json"
   },
   "repository": {
     "type": "git",
@@ -17,7 +18,8 @@
     "typescript",
     "html",
     "css",
-    "frontend"
+    "frontend",
+    "svelte"
   ],
   "author": "i.nafikov",
   "license": "ISC",
@@ -26,11 +28,12 @@
   },
   "homepage": "https://github.com/Iskanred/iu-frontend-course#readme",
   "devDependencies": {
-    "@rollup/plugin-node-resolve": "^15.0.1",
-    "@rollup/plugin-terser": "^0.4.0",
-    "@rollup/plugin-typescript": "^11.0.0",
-    "rollup": "^3.18.0",
+    "@sveltejs/vite-plugin-svelte": "^2.0.2",
+    "@tsconfig/svelte": "^3.0.0",
+    "svelte": "^3.55.1",
+    "svelte-check": "^2.10.3",
     "tslib": "^2.5.0",
-    "typescript": "^4.9.5"
+    "typescript": "^4.9.3",
+    "vite": "^4.1.0"
   }
 }

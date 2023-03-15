@@ -1,0 +1,21 @@
+body {
+    background-color: #F2F2F2;
+    margin-left: 10%;
+    margin-right: 10%;
+    font-family: "Futura", serif;
+    color: #403D3C;
+    display: flex;
+    flex-direction: column;
+}
+
+a {
+    text-decoration: underline;
+}
+
+a:link, a:visited {
+    color: mediumblue;
+}
+
+a:hover {
+    color: coral;
+}

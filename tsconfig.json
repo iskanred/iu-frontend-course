@@ -1,25 +1,23 @@
 {
+  "extends": "@tsconfig/svelte/tsconfig.json",
   "compilerOptions": {
-    /* Language and Environment */
-    "target": "ES2022",                                   /* Set the JavaScript language version for emitted JavaScript and include compatible library declarations. */
-
-    /* Modules */
-    "module": "ES2022",                                   /* Specify what module code is generated. */
-    "moduleResolution": "node",                           /* Specify how TypeScript looks up a file from a given module specifier. */
-
-    /* Interop Constraints */
-    "esModuleInterop": true,                              /* Emit additional JavaScript to ease support for importing CommonJS modules. This enables 'allowSyntheticDefaultImports' for type compatibility. */
-    "forceConsistentCasingInFileNames": true,             /* Ensure that casing is correct in imports. */
-
-    /* Type Checking */
-    "strict": true,                                       /* Enable all strict type-checking options. */
-
-    /* Completeness */
-    // "skipDefaultLibCheck": true,                       /* Skip type checking .d.ts files that are included with TypeScript. */
-    "skipLibCheck": true,                                 /* Skip type checking all .d.ts files. */
-    "noEmitHelpers": false,
-    "outDir": "dist",
+    "target": "ESNext",
+    "useDefineForClassFields": true,
+    "module": "ESNext",
+    "resolveJsonModule": true,
+    /**
+     * Typecheck JS in `.svelte` and `.js` files by default.
+     * Disable checkJs if you'd like to use dynamic types in JS.
+     * Note that setting allowJs false does not prevent the use
+     * of JS in `.svelte` files.
+     */
+    "allowJs": true,
+    "checkJs": true,
+    "isolatedModules": true,
+    "strictNullChecks": false,
+    "alwaysStrict": true,
+    "strict": true,
   },
-  "include": [ "./**/*" ],
-  "exclude": [ "node_modules", "dist" ]
+  "include": ["src/**/*.d.ts", "src/**/*.ts", "src/**/*.js", "src/**/*.svelte"],
+  "references": [{ "path": "./tsconfig.node.json" }]
 }
