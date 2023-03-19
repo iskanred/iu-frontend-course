@@ -1,0 +1,1 @@
+async function s(t){if(!t.ok)throw Error(`Response status is ${t.status} ${t.statusText}`);return await t.json()}function r(t,n){return t+"?"+n.toString()}async function a(t){const n=await fetch(t);return s(n)}export{r as b,a as r};
