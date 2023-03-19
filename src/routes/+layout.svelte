@@ -3,12 +3,12 @@
     import {base} from "$app/paths";
 </script>
 
-<div>
+<header>
     <nav>
         <a href="{base}/">Portfolio</a>
         <a href="{base}/comic/">Comic</a>
     </nav>
-</div>
+</header>
 
 <slot />
 
