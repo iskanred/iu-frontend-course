@@ -1,7 +1,8 @@
 <script lang="ts">
    import Contact from "./Contact.svelte";
+   import {base} from "$app/paths";
 
-   const myPhoto = "images/my-photo.jpeg";
+   const myPhoto = `${base}/images/my-photo.jpeg`;
 </script>
 
 <header>

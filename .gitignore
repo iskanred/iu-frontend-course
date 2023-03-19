@@ -265,5 +265,7 @@ $RECYCLE.BIN/
 
 node_modules/
 dist/
+build/
+.svelte-kit/
 
 # End of https://www.toptal.com/developers/gitignore/api/webstorm,macos,windows,linux,jetbrains

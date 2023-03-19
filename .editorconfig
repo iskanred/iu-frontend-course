@@ -231,6 +231,6 @@ ij_html_space_around_equality_in_attribute = false
 ij_html_space_inside_empty_tag = false
 ij_html_text_wrap = normal
 
-[*.json]
+[{*.json,*.yml,*.yaml}]
 tab_width = 2
 indent_size = tab

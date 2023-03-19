@@ -1,6 +1,7 @@
 <script lang="ts">
     import type {XkcdComic} from "../specific/comic";
     import {extractDate, fetchXkcdComic} from "../specific/comic";
+    import ProgressRing from "$lib/components/ProgressRing.svelte";
 
     let date: string;
     let title: string;
@@ -16,26 +17,28 @@
     }
 </script>
 
-<footer>
+<div id ="container">
     {#await fillComicInfo()}
-        <h2 class="comic-title">an XKCD comic</h2>
-        <img class="comic-img" alt="XKCD comic" src="">
+        <ProgressRing/>
     {:then _}
         <h2 class="comic-title">{title}</h2>
         <figure>
             <img class="comic-img" {alt} {src}>
             <figcaption>Upload Date: {date}</figcaption>
         </figure>
+    {:catch error}
+        <p>Error occurred: [{error}]</p>
     {/await}
-</footer>
+</div>
 
 <style>
-    footer {
+    #container {
         margin: auto;
         justify-content: space-evenly;
+        padding-top: 20px;
     }
 
-    footer figure {
+    div figure {
         display: flex;
         flex-direction: column;
     }
@@ -47,10 +50,5 @@
     figcaption {
         margin-top: 1%;
         color: grey;
-    }
-
-    .comic-img {
-        border: 1px solid;
-        border-radius: 10%;
     }
 </style>

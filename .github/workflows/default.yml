@@ -1,0 +1,29 @@
+name: Build and Deploy
+
+on:
+  push:
+    branches:
+      - master
+
+permissions:
+  contents: write
+
+jobs:
+  build-and-deploy:
+    name: Build and Deploy to GH Pages
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: Setup Node.js v16
+        uses: actions/setup-node@v3
+        with:
+          node-version: '16'
+      - name: Install dependencies
+        run: npm ci
+      - name: Build website
+        run: npm run build
+      - name: Deploy to GitHub Page
+        uses: JamesIves/github-pages-deploy-action@v4
+        with:
+          folder: build
