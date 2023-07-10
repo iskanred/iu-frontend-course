@@ -16,7 +16,7 @@
                     Enjoy developing reliable, safe,
                     and fast web-services.
                     Have experience in Android Development,
-                    Machine Learning, Frontend Web Development,
+                    Distributed Systems, Frontend Web Development,
                     Compiler Construction.
                 </p>
             </div>
@@ -35,7 +35,6 @@
                     <li>Gradle/Maven</li>
                     <li>Git</li>
                     <li>Junit, ArchUnit, Mockito, MockK, Testcontainers</li>
-                    <li>Agile, Kanban</li>
                 </ul>
             </div>
         </section>
@@ -66,6 +65,11 @@
                         migrating them to new technology
                         stack
                     </li>
+                    <li>
+                        Having SRE role. I am engaged in reliability, availability
+                        and fault tolerance of services,
+                        work with infrastructure and advise developers.
+                    </li>
                 </ul>
             </div>
             <div class="section-main-content">
@@ -94,7 +98,7 @@
                         development
                     </li>
                     <li>
-                        GPA: 4.66
+                        GPA: 4.69
                     </li>
                 </ul>
             </div>

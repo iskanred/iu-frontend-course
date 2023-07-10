@@ -4,9 +4,10 @@
 
     const username = "Iskanred"
     const projectNames = [
-        'message-generating-backend',
-        'message-obtain-app',
-        'internship-test-russianpost'
+        "message-generating-backend",
+        "message-obtain-app",
+        "internship-test-russianpost",
+        "innotes-web-app"
     ];
 
     async function fillProjectDescription(projectName: string): Promise<string> {
