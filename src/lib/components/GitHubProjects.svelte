@@ -6,7 +6,6 @@
     const projectNames = [
         "message-generating-backend",
         "message-obtain-app",
-        "internship-test-russianpost",
         "innotes-web-app"
     ];
 

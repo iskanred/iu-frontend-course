@@ -1,10 +1,11 @@
 body {
     background-color: #F2F2F2;
-    margin-left: 10%;
-    margin-right: 10%;
+    margin-right: 6%;
     font-family: "Futura", serif;
     color: #403D3C;
     display: flex;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
 }
 

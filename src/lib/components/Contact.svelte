@@ -15,9 +15,9 @@
 
 <style>
     .contact {
-        font-size: 20px;
+        font-size: 85%;
     }
     .link-icon {
-        font-size: 24px;
+        font-size: 120%;
     }
 </style>
