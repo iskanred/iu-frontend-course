@@ -1,5 +1,5 @@
 <script lang="ts">
-    import ComicDiv from "$lib/components/ComicDiv.svelte";
+	import ComicDiv from '$lib/components/ComicDiv.svelte';
 </script>
 
-<ComicDiv/>
+<ComicDiv />
